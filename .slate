@@ -16,6 +16,7 @@ bind 1:ctrl;cmd  push left bar-resize:screenSizeX/4
 bind 2:ctrl;cmd  move screenSizeX/4;0 screenSizeX/4;screenSizeY
 bind 3:ctrl;cmd  move screenSizeX/2;0 screenSizeX/4;screenSizeY
 bind 4:ctrl;cmd  push right bar-resize:screenSizeX/4
+bind 5:ctrl;cmd  move screenSizeX/4;0 screenSizeX/2;screenSizeY
 
 # Etc
 bind esc:cmd hint
