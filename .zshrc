@@ -108,8 +108,12 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Login and logout commands for the AWS CLI in connection with the LEGO Brick Recognition Platform (BRP)
-alias brplogin='source "/Users/dkMaMoJe/gits/brp-utils/aws_login.sh"'
-alias brplogout='source "/Users/dkMaMoJe/gits/brp-utils/aws_logout.sh"'
+#alias brplogin='source "/Users/dkMaMoJe/gits/brp-utils/aws_login.sh"'
+#alias brplogout='source "/Users/dkMaMoJe/gits/brp-utils/aws_logout.sh"'
+
+# BRP utility function
+export BRP_UTILS_PATH=/Users/dkMaMoJe/gits/brp-utils
+source "$BRP_UTILS_PATH/function/brp.sh"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -120,3 +124,6 @@ export SDKMAN_DIR="$HOME/.sdkman"
 
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
+export PATH=/Users/dkMaMoJe/.poetry/bin:/Users/dkMaMoJe/.nvm/versions/node/v14.19.0/bin:/Users/dkMaMoJe/.sdkman/candidates/java/current/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin
+eval "$(pyenv init --path)"
+eval "$(pyenv init -)"
