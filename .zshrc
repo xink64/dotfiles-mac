@@ -127,3 +127,6 @@ source $(brew --prefix nvm)/nvm.sh
 export PATH=/Users/dkMaMoJe/.poetry/bin:/Users/dkMaMoJe/.nvm/versions/node/v14.19.0/bin:/Users/dkMaMoJe/.sdkman/candidates/java/current/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin
 eval "$(pyenv init --path)"
 eval "$(pyenv init -)"
+
+# Added by Amplify CLI binary installer
+export PATH="$HOME/.amplify/bin:$PATH"
