@@ -1,3 +1,6 @@
+# Xcode
+xcode-select --install
+
 # Brew
 if hash brew 2>/dev/null; then
         which brew
@@ -5,10 +8,9 @@ if hash brew 2>/dev/null; then
         /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
-#Quick Look plugins
-brew install --cask \
+# Quick Look plugins
+brew install --cask --quiet \
     qlcolorcode \
-    qlstephen \
     qlmarkdown \
     quicklook-json \
     qlprettypatch \
@@ -56,22 +58,34 @@ brew install \
     miro \
     mas-cli/tap/mas \
     drawio \
-    slate \
     stats
 
 # Cask
-brew install --cask \
+brew install --cask --quiet \
     android-sdk \
     android-platform-tools \
     warp \
     cyberduck \
-    hiddenbar \
-    vnc-viewer
+    vnc-viewer \
+    sensiblesidebuttons \
+    visual-studio-code \
+    keepassx \
+    nextcloud \
+    unnaturalscrollwheels \
 
-    
+# No verify
+brew install --cask --no-quarantine --quiet \
+    karabiner-elements \
+    sensiblesidebuttons \
+    slate \
+    qlstephen
 
 # Java SDK Manager
 curl -s "https://get.sdkman.io" | bash
 
-# Amphetamine
+# Apple Store
 mas lucky amphetamine
+mas lucky hiddenbar
+
+# Unlock Apps
+xattr -r -d com.apple.quarantine "/Applications/Slate.app"
