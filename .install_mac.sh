@@ -72,6 +72,7 @@ brew install --cask --quiet \
     keepassx \
     nextcloud \
     unnaturalscrollwheels \
+    netron
 
 # No verify
 brew install --cask --no-quarantine --quiet \
