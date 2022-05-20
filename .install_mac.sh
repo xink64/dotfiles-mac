@@ -89,3 +89,4 @@ mas lucky hiddenbar
 
 # Unlock Apps
 xattr -r -d com.apple.quarantine "/Applications/Slate.app"
+sudo xattr -cr /Applications/*
