@@ -130,3 +130,4 @@ eval "$(pyenv init -)"
 
 # Added by Amplify CLI binary installer
 export PATH="$HOME/.amplify/bin:$PATH"
+eval "$(pyenv virtualenv-init -)"
