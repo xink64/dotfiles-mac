@@ -58,7 +58,8 @@ brew install \
     miro \
     mas-cli/tap/mas \
     drawio \
-    stats
+    stats \
+    tree
 
 # Cask
 brew install --cask --quiet \
