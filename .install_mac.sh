@@ -65,7 +65,6 @@ brew install \
 brew install --cask --quiet \
     android-sdk \
     android-platform-tools \
-    warp \
     cyberduck \
     vnc-viewer \
     sensiblesidebuttons \
