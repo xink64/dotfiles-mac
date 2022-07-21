@@ -20,3 +20,8 @@ sudo xattr -cr /Applications/*
 
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+
+pyenv install 3.10.5
+pyenv global 3.10.5
+
+curl -sSL https://install.python-poetry.org | python3 -
