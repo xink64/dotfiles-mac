@@ -68,3 +68,4 @@ cask "hiddenbar"
 mas "amphetamine", id: 937984704
 cask "macs-fan-control"
 cask "bettertouchtool"
+cask "geekbench"
